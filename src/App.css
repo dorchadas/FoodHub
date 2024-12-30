@@ -1,0 +1,244 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+  }
+  body{
+    
+    background-color: #E3F2FD ;
+  }
+  #header{
+    display: flex;
+    background-color: rgb(119, 116, 116);
+    height: 70px;
+    padding-top: 20px;
+  }
+  .header-components{
+    text-decoration: none;
+    color: #212121;
+    margin-left: 30%;
+    
+    width: 70%;
+    
+  }
+  a{
+    padding-left: 60px;
+    font-size: 23px;
+    text-decoration: none;
+    /* color:rgb(231, 29, 54); */
+    color: black;
+
+    
+    /* font-weight: 600; */
+  }
+
+
+  /* Its From Imagecontent  */
+
+
+  .imagecontent{
+    display: flex;
+  }
+
+
+  .animation1{
+margin-top: 9%;
+margin-left: 10%;
+padding-top: 7%;
+padding-left: 40px;
+padding-right: 40px;
+width: 40%;
+height: 60vh;
+background-color: #FCE4EC;
+border: 2px solid #F8BBD0;
+border-radius: 30px;
+box-shadow: 40px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+   .animation2{
+    margin-top: 9%;
+    margin-right: 5%;
+    margin-left: 10%;
+    /* padding-top: 5%;
+    padding-left: 40px;
+    padding-right: 40px; */
+    padding:20px ;
+    width: 40%;
+    
+    height: 72vh; 
+   
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #F8BBD0;
+    background-color: #FCE4EC;
+    border-radius: 30px;
+    box-shadow: 40px 3px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  .slide-left {
+    color: #1A237E;
+    animation: slideFromLeft 13s ease-out forwards infinite;
+  }
+  
+  .slide-up {
+    animation: slideFromBelow 8s ease-out forwards infinite;
+    color: #1A237E;
+  }
+  
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-1%);
+      opacity: 0;
+      color: blue;
+    }
+    50% {
+      transform: translateX(5%);
+      opacity: 0;
+      color: blue;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+      color: blue;
+    }
+  }
+  
+  @keyframes slideFromBelow {
+    0% {
+      transform: translateY(-70%);
+      opacity: 0;
+      color:#9046CF ;
+      
+    }
+    10% {
+      transform: translateX(30%);
+      opacity: 0;
+      color: blue;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      color:#9046CF ;
+    }
+  }
+
+  /* Animation 1 has ended now animation 2 will start  */
+
+  .carousel-track {
+    display: flex; /* Images in a row */
+    width: calc(300px * 5); /* Total width = image width * number of images */
+    animation: slide 25s infinite; /* 4s per image for 5 images */
+    /* background-color:#F9FFB5 ; */
+  }
+
+  .carousel-track img {
+    padding: 20px;
+    /* padding-left: 30px; */
+    width: 24%; 
+    height: auto; 
+    margin: 0 10px; 
+    gap: 500px;
+    object-fit: cover;
+    /* border: 1px solid rebeccapurple; */
+    border-radius: 15%; 
+    /* box-shadow: 20px  23px 6px 9px rgba(0,0,0,0.5);
+     */
+      box-shadow: 10px 4px 16px rgba(0, 0, 0, 0.5), 0 -4px 6px rgba(0, 0, 0, 0.5), -4px 0 6px rgba(0, 0, 0, 0.5), -10px 0 14px rgba(0, 0, 0, 0.5);
+  }
+
+  
+  @keyframes slide {
+    0% {
+         transform: translateX(0); 
+        } 
+    10% { 
+        transform: translateX(0);
+     } 
+    30% { transform: translateX(-550px); } /* Second image */
+    40% { transform: translateX(-550px); } /* Stay on second image */
+    50% { transform: translateX(-1075px); } /* Third image */
+    60% { transform: translateX(-1075px); } /* Stay on third image */
+    70% { transform: translateX(-1600px); } /* Fourth image */
+    80% { transform: translateX(-1600px); } /* Stay on fourth image */
+    90% { transform: translateX(-2100px); } 
+    100% { transform: translateX(-2100px); } 
+  }
+.buy-food1{
+    width: 120px;
+    height: 300px;
+    /* margin-left: 60px; */
+    margin-top: 50px;
+    background-color: #9046CF;
+    border-radius: 15px;
+}
+  .buy-food{
+    width: 120px;
+    height: 300px;
+    margin-left: 60px;
+    margin-top: 50px;
+    background-color: #9046CF;
+    border-radius: 15px;
+  }
+  
+  /* Products start from here  */
+.products{
+    display: flex;
+}
+  /* catagories css start from here  */
+
+
+  .categories {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: calc(100% - 60px);
+    background-color: #80CBC4;
+    margin-top: 10%;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    font-weight: 700;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .categories p:hover {
+    color: #2d936c;
+  }
+  
+  .image {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  .food-items ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .food-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .api-styles {
+    padding: 30px;
+    background-color: #2d936c;
+    color: red;
+    border: 2px solid red;
+    width: 20%;
+  }
+  
+
+  .cart-item{
+      
+    display: flex;
+    
+
+  }
