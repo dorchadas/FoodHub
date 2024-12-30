@@ -9,7 +9,7 @@ const ImageContent = () => {
 
      </div>
      <div className="animation2">
-      <h1 style={{textAlign:"center"}}>Top Picks</h1>
+      <h1 style={{textAlign:"center"}}>Top Ticks</h1>
       <hr />
       <br /><br />
       <div className="carousel-track">
